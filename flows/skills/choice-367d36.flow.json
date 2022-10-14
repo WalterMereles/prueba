@@ -1,0 +1,102 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "es1dcnhva3",
+    "contentId": "builtin_single-choice-wl0Bqt",
+    "invalidContentId": "",
+    "keywords": {
+      "Comprar": [
+        "Comprar"
+      ],
+      "Hablar con un operador": [
+        "Hablar con un operador",
+        "Registrarse"
+      ],
+      "Requisitos de Admicion": [
+        "Requisitos de Admicion"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-invalid-count-es1dcnhva3\",\"value\": 0}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-valid-es1dcnhva3\",\"value\": null}",
+        "builtin/setVariable {\"type\":\"temp\",\"name\":\"skill-choice-ret-es1dcnhva3\",\"value\": null}",
+        "say #!builtin_single-choice-wl0Bqt {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "226115"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"es1dcnhva3\",\"contentId\":\"builtin_single-choice-wl0Bqt\",\"invalidContentId\":\"\",\"keywords\":{\"Comprar\":[\"Comprar\"],\"Hablar con un operador\":[\"Hablar con un operador\",\"Registrarse\"],\"Requisitos de Admicion\":[\"Requisitos de Admicion\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-es1dcnhva3'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "773766"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"es1dcnhva3\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-es1dcnhva3']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "416979"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "261358"
+    }
+  ]
+}

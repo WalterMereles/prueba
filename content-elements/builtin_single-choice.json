@@ -1,0 +1,173 @@
+[
+  {
+    "id": "builtin_single-choice-IAFxAV",
+    "formData": {
+      "dropdownPlaceholder$en": "{{Select...",
+      "choices$en": [
+        {
+          "title": "Facultad de Salud",
+          "value": "Facultad de Salud"
+        },
+        {
+          "title": "Facultad de Ingenieria",
+          "value": "Facultad de Ingenieria"
+        },
+        {
+          "title": "Facultad de Ciencias Jurídicas",
+          "value": "Facultad de Ciencias Jurídicas"
+        },
+        {
+          "title": "Facultad de Gestion",
+          "value": "Facultad de Gestion"
+        },
+        {
+          "title": "Facultad de Relaciones Internacionales",
+          "value": "Facultad de Relaciones Internacionales"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Seleccione la especialidad:"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T16:29:26.239Z",
+    "modifiedOn": "2021-05-11T19:48:48.140Z"
+  },
+  {
+    "id": "builtin_single-choice-wl0Bqt",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Comprar",
+          "value": "Comprar"
+        },
+        {
+          "title": "Registrarse",
+          "value": "Hablar con un operador"
+        },
+        {
+          "title": "Requisitos de Admicion",
+          "value": "Requisitos de Admicion"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Seleccione la opcion que necesita"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T20:43:35.173Z",
+    "modifiedOn": "2022-10-07T19:36:02.481Z"
+  },
+  {
+    "id": "builtin_single-choice-uBoUxB",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Medicina",
+          "value": "Medicina"
+        },
+        {
+          "title": "Enfermeria",
+          "value": "Enfermeria"
+        },
+        {
+          "title": "Nutrición",
+          "value": "Nutricion"
+        },
+        {
+          "title": "Kinesiologia y Fisioterapia",
+          "value": "Kinesiologia y Fisioterapia"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Seleccione la Carrera"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T11:57:09.596Z",
+    "modifiedOn": "2021-05-11T11:57:09.596Z"
+  },
+  {
+    "id": "builtin_single-choice-hWMKa_",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Ingeniería en Sistemas",
+          "value": "Ingeniería en Sistemas"
+        },
+        {
+          "title": "Ingeniería en Informática",
+          "value": "Ingeniería en Informática"
+        },
+        {
+          "title": "Ingeniería Comercial",
+          "value": "Ingeniería Comercial"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Facultad de Ingenieria",
+      "isDropdown$en": false
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T12:22:22.862Z",
+    "modifiedOn": "2021-05-11T13:21:52.912Z"
+  },
+  {
+    "id": "builtin_single-choice-oXtsI8",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Administracion de Empresas",
+          "value": "Administracion de Empresas"
+        },
+        {
+          "title": "Contaduria Pública",
+          "value": "Contaduria Pública"
+        },
+        {
+          "title": "Marketing",
+          "value": "Marketing"
+        },
+        {
+          "title": "Comercio Internacional",
+          "value": "Comercio Internacional"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Facultad de Gestión"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:35:45.561Z",
+    "modifiedOn": "2021-05-11T18:35:45.561Z"
+  },
+  {
+    "id": "builtin_single-choice-9L62V6",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Facultad de Relaciones Internacionales",
+          "value": "Facultad de Relaciones Internacionales"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": false,
+      "typing$en": true,
+      "text$en": "Facultad de Relaciones Internacionales"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:37:41.092Z",
+    "modifiedOn": "2021-05-11T19:23:16.126Z"
+  }
+]

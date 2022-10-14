@@ -1,0 +1,102 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "48idrq38sq",
+    "contentId": "builtin_single-choice-uBoUxB",
+    "invalidContentId": "",
+    "keywords": {
+      "Medicina": [
+        "Medicina"
+      ],
+      "Enfermeria": [
+        "Enfermeria"
+      ],
+      "Nutricion": [
+        "Nutricion",
+        "Nutrición"
+      ],
+      "Kinesiologia y Fisioterapia": [
+        "Kinesiologia y Fisioterapia"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-uBoUxB {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "577080"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"48idrq38sq\",\"contentId\":\"builtin_single-choice-uBoUxB\",\"invalidContentId\":\"\",\"keywords\":{\"Medicina\":[\"Medicina\"],\"Enfermeria\":[\"Enfermeria\"],\"Nutricion\":[\"Nutricion\",\"Nutrición\"],\"Kinesiologia y Fisioterapia\":[\"Kinesiologia y Fisioterapia\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-48idrq38sq'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "463571"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"48idrq38sq\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-48idrq38sq']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "916681"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "219305"
+    }
+  ]
+}

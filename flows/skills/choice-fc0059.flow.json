@@ -1,0 +1,104 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "randomId": "rs0cmw48qe",
+    "contentId": "builtin_single-choice-IAFxAV",
+    "invalidContentId": "",
+    "keywords": {
+      "Facultad de Salud": [
+        "Facultad de Salud"
+      ],
+      "Facultad de Ingenieria": [
+        "Facultad de Ingenieria"
+      ],
+      "Facultad de Ciencias Jurídicas": [
+        "Facultad de Ciencias Jurídicas"
+      ],
+      "Facultad de Gestion": [
+        "Facultad de Gestion"
+      ],
+      "Facultad de Relaciones Internacionales": [
+        "Facultad de Relaciones Internacionales"
+      ]
+    },
+    "config": {
+      "nbMaxRetries": 3,
+      "repeatChoicesOnInvalid": false,
+      "variableName": ""
+    }
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "say #!builtin_single-choice-IAFxAV {\"skill\":\"choice\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "188061"
+    },
+    {
+      "name": "parse",
+      "onReceive": [
+        "basic-skills/choice_parse_answer {\"randomId\":\"rs0cmw48qe\",\"contentId\":\"builtin_single-choice-IAFxAV\",\"invalidContentId\":\"\",\"keywords\":{\"Facultad de Salud\":[\"Facultad de Salud\"],\"Facultad de Ingenieria\":[\"Facultad de Ingenieria\"],\"Facultad de Ciencias Jurídicas\":[\"Facultad de Ciencias Jurídicas\"],\"Facultad de Gestion\":[\"Facultad de Gestion\"],\"Facultad de Relaciones Internacionales\":[\"Facultad de Relaciones Internacionales\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+      ],
+      "next": [
+        {
+          "condition": "temp['skill-choice-valid-rs0cmw48qe'] === true",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "invalid"
+        }
+      ],
+      "triggers": [
+        {
+          "conditions": [
+            {
+              "id": "always"
+            }
+          ]
+        }
+      ],
+      "onEnter": [],
+      "id": "158632"
+    },
+    {
+      "name": "invalid",
+      "onEnter": [
+        "basic-skills/choice_invalid_answer {\"randomId\":\"rs0cmw48qe\"}"
+      ],
+      "next": [
+        {
+          "condition": "Number(temp['skill-choice-invalid-count-rs0cmw48qe']) > Number(3)",
+          "node": "#"
+        },
+        {
+          "condition": "true",
+          "node": "sorry"
+        }
+      ],
+      "id": "869828"
+    },
+    {
+      "name": "sorry",
+      "onEnter": [],
+      "next": [
+        {
+          "condition": "true",
+          "node": "parse"
+        }
+      ],
+      "id": "021434"
+    }
+  ]
+}

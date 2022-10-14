@@ -1,0 +1,468 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "Inicio",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "Inicio",
+      "next": [
+        {
+          "condition": "true",
+          "node": "Opciones_de_Ayuda"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-se5zBV",
+        "say #!builtin_text-uUJkZy"
+      ],
+      "onReceive": null
+    },
+    {
+      "id": "skill-fc0059",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "lista_Facultades",
+      "flow": "skills/choice-fc0059.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-rs0cmw48qe'] == \"Facultad de Salud\"",
+          "node": "lista_carrera_Med"
+        },
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-rs0cmw48qe'] == \"Facultad de Ingenieria\"",
+          "node": "lista_carrera_Inge"
+        },
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-rs0cmw48qe'] == \"Facultad de Ciencias Jurídicas\"",
+          "node": "lista_cien_juri"
+        },
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-rs0cmw48qe'] == \"Facultad de Gestion\"",
+          "node": "lista_gestion"
+        },
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-rs0cmw48qe'] == \"Facultad de Relaciones Internacionales\"",
+          "node": "lista_cien_juri-copy"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-367d36",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Opciones_de_Ayuda",
+      "flow": "skills/choice-367d36.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Comprar]",
+          "condition": "temp['skill-choice-ret-es1dcnhva3'] == \"Comprar\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [Hablar ...]",
+          "condition": "temp['skill-choice-ret-es1dcnhva3'] == \"Hablar con un operador\"",
+          "node": ""
+        },
+        {
+          "caption": "User picked [Requisi...]",
+          "condition": "temp['skill-choice-ret-es1dcnhva3'] == \"Requisitos de Admicion\"",
+          "node": "Admicion"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "cbff78030c",
+      "name": "Enlace_Eclass",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-VoIMaL",
+        "say #!builtin_carousel-IHzxHF"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-e0c68b",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "lista_carrera_Med",
+      "flow": "skills/choice-e0c68b.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Medicina]",
+          "condition": "temp['skill-choice-ret-48idrq38sq'] == \"Medicina\"",
+          "node": "enlace_Medicina"
+        },
+        {
+          "caption": "User picked [Enferme...]",
+          "condition": "temp['skill-choice-ret-48idrq38sq'] == \"Enfermeria\"",
+          "node": "enlace_Enfermeria"
+        },
+        {
+          "caption": "User picked [Nutrici...]",
+          "condition": "temp['skill-choice-ret-48idrq38sq'] == \"Nutricion\"",
+          "node": "enlace_Nutricion"
+        },
+        {
+          "caption": "User picked [Kinesio...]",
+          "condition": "temp['skill-choice-ret-48idrq38sq'] == \"Kinesiologia y Fisioterapia\"",
+          "node": "enlace_Kine_Fisio"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-40ff1e",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "lista_carrera_Inge",
+      "flow": "skills/choice-40ff1e.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Ingenie...]",
+          "condition": "temp['skill-choice-ret-vzihmwfd2t'] == \"Ingeniería en Sistemas\"",
+          "node": "enlace_sistemsas"
+        },
+        {
+          "caption": "User picked [Ingenie...]",
+          "condition": "temp['skill-choice-ret-vzihmwfd2t'] == \"Ingeniería en Informática\"",
+          "node": "enlace_informatica"
+        },
+        {
+          "caption": "User picked [Ingenie...]",
+          "condition": "temp['skill-choice-ret-vzihmwfd2t'] == \"Ingeniería Comercial\"",
+          "node": "enlace_Comercial"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "be5c863412",
+      "name": "enlace_informatica",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-59GKWQ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "601b51eab5",
+      "name": "enlace_sistemsas",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-59GKWQ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "e5fb99609e",
+      "name": "enlace_Comercial",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-59GKWQ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "96837662b9",
+      "name": "Admicion",
+      "next": [
+        {
+          "condition": "true",
+          "node": "lista_Facultades"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-Cq5PBQ"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "2595399ac4",
+      "name": "enlace_Medicina",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-AyfjqO"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0f55a3b1cb",
+      "name": "enlace_Enfermeria",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-cqe0QK"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0e429bed58",
+      "name": "enlace_Nutricion",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-_M-DL4"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "262b779314",
+      "name": "enlace_Kine_Fisio",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-luzSA9"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-95364d",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "lista_gestion",
+      "flow": "skills/choice-95364d.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Adminis...]",
+          "condition": "temp['skill-choice-ret-iqz8faslz3'] == \"Administracion de Empresas\"",
+          "node": "enlace_Admini"
+        },
+        {
+          "caption": "User picked [Contadu...]",
+          "condition": "temp['skill-choice-ret-iqz8faslz3'] == \"Contaduria Pública\"",
+          "node": "enlace_contaduria"
+        },
+        {
+          "caption": "User picked [Marketi...]",
+          "condition": "temp['skill-choice-ret-iqz8faslz3'] == \"Marketing\"",
+          "node": "enlace_Marke"
+        },
+        {
+          "caption": "User picked [Comerci...]",
+          "condition": "temp['skill-choice-ret-iqz8faslz3'] == \"Comercio Internacional\"",
+          "node": "enlace_Comer_Inter"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-2a5efb",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "lista_cien_juri",
+      "flow": "skills/choice-2a5efb.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-1x6ahh7mkb'] == \"Facultad de ciencias Juridicas\"",
+          "node": "enlace_Cien_Juri"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "8a94924a7a",
+      "name": "enlace_Cien_Juri",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-zORavl"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "29ce748195",
+      "name": "enlace_Admini",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-TptA6P"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "8eba732340",
+      "name": "enlace_contaduria",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-gXiAZ5"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "0726fa12e6",
+      "name": "enlace_Marke",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-DmHDUY"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "d5273035fa",
+      "name": "enlace_Comer_Inter",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-QjYvkq"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "24bb715f89",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "lista_cien_juri-copy",
+      "flow": "skills/choice-2a5efb.flow.json",
+      "next": [
+        {
+          "caption": "User picked [Faculta...]",
+          "condition": "temp['skill-choice-ret-1x6ahh7mkb'] == \"Facultad de Relaciones Internacionales\"",
+          "node": "enlace_Rela_Int"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "656681c877",
+      "name": "enlace_Rela_Int",
+      "next": [
+        {
+          "condition": "true",
+          "node": ""
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_carousel-l4sevc"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}

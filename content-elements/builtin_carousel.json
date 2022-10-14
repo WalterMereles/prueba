@@ -1,0 +1,282 @@
+[
+  {
+    "id": "builtin_carousel-1GVnRm",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Este es el enlace para acceder al E-Class de UNIDA  https://eclass.unida.edu.py/infou/"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T20:51:22.947Z",
+    "modifiedOn": "2021-05-10T20:51:22.947Z"
+  },
+  {
+    "id": "builtin_carousel-IHzxHF",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "actions": [
+            {
+              "action": "Open URL",
+              "url": "https://eclass.unida.edu.py/infou/",
+              "title": "Pagina del E-Class"
+            }
+          ],
+          "title": "Eclass"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T20:53:14.229Z",
+    "modifiedOn": "2021-05-10T20:53:14.229Z"
+  },
+  {
+    "id": "builtin_carousel-59GKWQ",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Ingenieria Informatica",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-ingenieria/ingenieria-comercial/"
+            }
+          ],
+          "image": "",
+          "title": "Ingenieria Comercial",
+          "subtitle": "Ingenieria Comercial"
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T13:05:48.879Z",
+    "modifiedOn": "2021-05-11T13:28:25.950Z"
+  },
+  {
+    "id": "builtin_carousel-AyfjqO",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Medicina",
+          "subtitle": "Medicina",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Medicina",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-salud/medicina/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:21:51.378Z",
+    "modifiedOn": "2021-05-11T18:21:51.378Z"
+  },
+  {
+    "id": "builtin_carousel-cqe0QK",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Enfermeria",
+          "subtitle": "Enfermeria",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Enfermeria",
+              "url": "https://www.unida.edu.py/facultades/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:23:26.780Z",
+    "modifiedOn": "2021-05-11T18:23:26.780Z"
+  },
+  {
+    "id": "builtin_carousel-_M-DL4",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Nutricion",
+          "subtitle": "Nutricion",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Nutricion",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-salud/nutricion/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:27:16.668Z",
+    "modifiedOn": "2021-05-11T18:27:16.668Z"
+  },
+  {
+    "id": "builtin_carousel-luzSA9",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Kinesiologia y Fisoiterapia",
+          "subtitle": "Kinesiologia y Fisoiterapia",
+          "image": "",
+          "actions": [
+            {
+              "action": "Open URL",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-salud/kinesiologia-y-fisioterapia/",
+              "title": "Kinesiologia y Fisoiterapia"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:29:21.077Z",
+    "modifiedOn": "2021-05-11T18:29:21.077Z"
+  },
+  {
+    "id": "builtin_carousel-zORavl",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Derecho",
+          "subtitle": "Derecho",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Derecho",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-ciencias-juridicas-y-relaciones-internacionales/derecho/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T18:39:24.684Z",
+    "modifiedOn": "2021-05-11T18:39:24.684Z"
+  },
+  {
+    "id": "builtin_carousel-TptA6P",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Administración de Empresas",
+          "subtitle": "Administración de Empresas",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Administración de Empresas",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-gestion/administracion-de-empresas/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T19:04:58.301Z",
+    "modifiedOn": "2021-05-11T19:04:58.301Z"
+  },
+  {
+    "id": "builtin_carousel-gXiAZ5",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Contaduría Pública",
+          "subtitle": "Contaduría Pública",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Contaduría Pública",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-gestion/contaduria-publica/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T19:06:29.270Z",
+    "modifiedOn": "2021-05-11T19:06:29.270Z"
+  },
+  {
+    "id": "builtin_carousel-DmHDUY",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Marketing",
+          "subtitle": "Marketing",
+          "image": "",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Marketing",
+              "url": "Marketing"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T19:08:13.255Z",
+    "modifiedOn": "2021-05-11T19:08:13.255Z"
+  },
+  {
+    "id": "builtin_carousel-QjYvkq",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Comercio Internacional",
+          "subtitle": "Comercio Internacional",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Comercio Internacional",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-gestion/comercio-internacional/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T19:16:35.110Z",
+    "modifiedOn": "2021-05-11T19:16:35.110Z"
+  },
+  {
+    "id": "builtin_carousel-l4sevc",
+    "formData": {
+      "typing$en": true,
+      "items$en": [
+        {
+          "title": "Relaciones Internacionales",
+          "subtitle": "Relaciones Internacionales",
+          "actions": [
+            {
+              "action": "Open URL",
+              "title": "Relaciones Internacionales",
+              "url": "https://www.unida.edu.py/facultades/facultad-de-ciencias-juridicas-y-relaciones-internacionales/relaciones-internacionales/"
+            }
+          ]
+        }
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T19:24:37.304Z",
+    "modifiedOn": "2021-05-11T19:24:37.304Z"
+  }
+]

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "builtin_text-se5zBV",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Hola que tal?, Soy Hatsu tu asistente virtual",
+      "variations$en": [
+        ""
+      ]
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T15:31:44.800Z",
+    "modifiedOn": "2021-05-10T15:33:58.869Z"
+  },
+  {
+    "id": "builtin_text-uUJkZy",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "En que te puedo ayudar?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T15:34:15.198Z",
+    "modifiedOn": "2021-05-10T15:34:15.198Z"
+  },
+  {
+    "id": "builtin_text-VoIMaL",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Enlace al E-Class Unida"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T20:46:54.672Z",
+    "modifiedOn": "2021-05-10T20:46:54.672Z"
+  },
+  {
+    "id": "builtin_text-iQM6CS",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Este es el enlace para acceder al E-Class de UNIDA  \nhttps://eclass.unida.edu.py/infou/"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-10T20:47:38.104Z",
+    "modifiedOn": "2021-05-10T20:49:41.505Z"
+  },
+  {
+    "id": "builtin_text-6eIBCt",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Ingenieria informatica"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T13:18:52.562Z",
+    "modifiedOn": "2021-05-11T13:18:52.562Z"
+  },
+  {
+    "id": "builtin_text-Cq5PBQ",
+    "formData": {
+      "markdown$en": true,
+      "typing$en": true,
+      "text$en": "Todo estudiante que desee ingresar a la Carrera de Ingeniería Informática deberá realizar un examen de admisión de las materias: Matemática, Comunicación Oral y Escrita y Metodología de Estudio, de manera a nivelar sus conocimientos básicos dentro del 1° Semestre del año lectivo, y presentar las siguientes documentaciones:\n• Certificado de Estudios de Bachiller Original Visado por el Sistema Nautilus del MEC\n• Fotocopia de Cédula de Identidad Policial , (Dos) copias autenticadas por escribanía\n• Foto tipo carnet actualizado (Dos). Fondo Blanco. 3,7 de alto x 3,3 de ancho"
+    },
+    "createdBy": "admin",
+    "createdOn": "2021-05-11T16:54:27.904Z",
+    "modifiedOn": "2021-05-11T16:54:27.904Z"
+  }
+]
